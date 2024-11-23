@@ -1,0 +1,191 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    font-family: "Sen", sans-serif;
+}
+
+*
+*:before,
+*:after{box-sizing: border-box;} 
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+/*-------------------------------Header--------------------------------*/
+header{
+    width: 100%;
+    height: 88px;
+    position: relative;
+}
+
+/* Свойство position помогает центрировать контейнеры и другие элементы внутри другого. У родителя задается 
+значение relative (мол свободное позиционирование), у дочернего absolute. Обязательно при этом используются 
+свойства top, bottom, right и left, которые будут двигать внутренний контейнер относительно краев родителя*/
+
+.container_header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3%;
+    left: 3%;
+}
+
+.navigation{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a{
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    height: 88px;
+    line-height: 88px;
+    text-decoration: none;
+    color: white;
+
+    transition: background 0.2s linear;
+}
+
+.navigation a:hover{
+    background-color: #5221E6;
+}
+/*-------------------------------Header--------------------------------*/
+main{
+    width: 100%;
+}
+
+.frame_43{
+    display: flex;
+    margin: auto;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text_frame_43{
+    text-align: left;
+}
+
+.text_frame_43 h1{
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+    /*margin-bottom:;*/
+}
+
+.text_frame_43 pre{
+    font-weight: 400;
+    font-size: 18px;
+    color: #8491A0;
+    font-family: "Sen", sans-serif;
+}
+
+.container_inputs{
+    color: white;
+    margin-left: 3%;
+}
+
+.container_inputs div{
+    margin-bottom: 24px;
+}
+
+.container_inputs label{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container_inputs input{
+    background-color: #181823;
+    color: white;
+    width: 526px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+.container_inputs button{
+    background-color: #5221E6;
+    color: #fff;
+    width: 526px;
+    height: 75px;
+    border: none;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*-------------------------------footer--------------------------------*/
+
+footer{
+    width: 100%;
+    padding: 2% 0;
+    color: #fff;
+    background-color: #181823;
+}
+
+footer article{
+    margin: 30px 5% 0;
+    font-weight: 400;
+    font-size: 16px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.icones div{
+    width: 104px;
+    display: flex;
+    flex-flow: row;
+}
+.icones div img{
+    margin-right: 15px;
+}
+.icones img{
+    margin-bottom: 10px;
+}
+
+.footer_navigation{
+    width: 400px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.nav_link1{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 190px;
+}
+
+.nav_link2{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 140px;
+}
+
+.footer_navigation a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p{
+    margin-left: 5%;
+    opacity: 0.5;
+}
