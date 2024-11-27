@@ -192,3 +192,32 @@ footer p{
     margin-left: 5%;
     opacity: 0.5;
 }
+
+.frame_30{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.st1 section{
+    background-color: #181823;
+    width: 636px;
+    height: 830px;
+    color: white;
+}
+
+.st1 p{
+    font-weight: 700;
+    color: #8491A0;
+    font-size: 16px;
+}
+
+.st1 h1{
+    font-weight: 700;
+    color: #fff;
+    font-size: 55px;
+}
+
+.st_text{
+    padding: 32px;
+}
