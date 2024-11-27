@@ -144,14 +144,17 @@ footer article{
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
 .icones div{
     width: 104px;
     display: flex;
     flex-flow: row;
 }
+
 .icones div img{
     margin-right: 15px;
 }
+
 .icones img{
     margin-bottom: 10px;
 }
