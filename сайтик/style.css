@@ -52,7 +52,7 @@ header{
     text-decoration: none;
     color: white;
 
-    transition: background 10ms linear;
+    transition: background-color 10ms linear;
 }
 
 .navigation a:hover{
@@ -66,6 +66,59 @@ main{
 
 main article{
     margin-bottom: 100px;
+}
+
+/*-------frame Hero-------*/
+.frame_Hero{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.Hero_foto{
+    width: 100%;
+    height: 812px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#Hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+#Square{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.Hero_text{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    z-index: 1;
+}
+
+.Hero_text h1{
+    font-size: 78px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Hero_text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+    margin-top: 30px;
 }
 
 /*-------frame43-------*/
@@ -82,7 +135,7 @@ main article{
     text-align: left;
 }
 
-.text_frame_43 h1{
+.text_frame_43 h4{
     font-weight: bold;
     font-size: 55px;
     color: white;
@@ -169,7 +222,7 @@ main article{
     font-size: 16px;
 }
 
-.st h1{
+.st h2{
     font-weight: 700;
     color: #fff;
     font-size: 55px;
@@ -182,7 +235,7 @@ main article{
     padding: 30px 25px 25px;
 }
 
-.st_text h2{
+.st_text h3{
     font-size: 24px;
     font-weight: bold;
     text-align: left;
@@ -285,6 +338,14 @@ footer article{
 .footer_navigation a{
     color: #fff;
     text-decoration: none;
+}
+
+.footer_navigation a:hover{
+    text-decoration: underline;
+}
+
+.footer_navigation a::after{
+    color: #5221E6;
 }
 
 footer p{
