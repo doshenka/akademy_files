@@ -3,6 +3,8 @@ body{
     margin: 0;
     background-color: #000;
     font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 *
@@ -19,10 +21,6 @@ header{
     height: 88px;
     position: relative;
 }
-
-/* Свойство position помогает центрировать контейнеры и другие элементы внутри другого. У родителя задается 
-значение relative (мол свободное позиционирование), у дочернего absolute. Обязательно при этом используются 
-свойства top, bottom, right и left, которые будут двигать внутренний контейнер относительно краев родителя*/
 
 .container_header{
     display: flex;
@@ -46,30 +44,37 @@ header{
 
 .navigation a{
     display: inline-block;
-    text-align: center;
-    width: 110px;
     height: 88px;
     line-height: 88px;
+    width: 110px;
+
+    text-align: center;
     text-decoration: none;
     color: white;
 
-    transition: background 0.2s linear;
+    transition: background 10ms linear;
 }
 
 .navigation a:hover{
     background-color: #5221E6;
 }
-/*-------------------------------Header--------------------------------*/
+
+/*-------------------------------Main--------------------------------*/
 main{
     width: 100%;
 }
 
+main article{
+    margin-bottom: 100px;
+}
+
+/*-------frame43-------*/
 .frame_43{
     display: flex;
-    margin: auto;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
+
     width: 100%;
 }
 
@@ -81,34 +86,35 @@ main{
     font-weight: bold;
     font-size: 55px;
     color: white;
-    /*margin-bottom:;*/
+    margin-bottom: 24px;
 }
 
 .text_frame_43 pre{
-    font-weight: 400;
     font-size: 18px;
     color: #8491A0;
+    font-weight: 400;
     font-family: "Sen", sans-serif;
 }
 
 .container_inputs{
-    color: white;
+    color: #fff;
     margin-left: 3%;
 }
 
 .container_inputs div{
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .container_inputs label{
     display: block;
     font-weight: 400;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .container_inputs input{
     background-color: #181823;
-    color: white;
+    color: #fff;
     width: 526px;
     height: 50px;
     border: none;
@@ -116,27 +122,126 @@ main{
 }
 
 .container_inputs button{
-    background-color: #5221E6;
-    color: #fff;
     width: 526px;
     height: 75px;
     border: none;
-
-    font-size: 18px;
-    font-weight: bold;
+    background-color: #5221E6;
+    color: #fff;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+
+    transition: background-color 0.1s linear;
 }
-/*-------------------------------footer--------------------------------*/
+
+.container_inputs button:hover{
+    opacity: 0.8;
+}
+
+/*-------frame30-------*/
+.frame_30{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.st{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.st section{
+    background-color: #181823;
+    width: 636px;
+    height: 830px;
+    color: white;
+
+    margin-top: 24px;
+}
+
+.st p{
+    font-weight: 700;
+    color: #8491A0;
+    font-size: 16px;
+}
+
+.st h1{
+    font-weight: 700;
+    color: #fff;
+    font-size: 55px;
+
+    width: 572px;
+    margin-bottom: 59px;
+}
+
+.st_text{
+    padding: 30px 25px 25px;
+}
+
+.st_text h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.st_text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #8491A0;
+    line-height: 30px;
+}
+
+.st button{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Sen", sans-serif;
+
+    background-color: #000;
+    border: 2px solid #5221E6;
+    width: 246px;
+    height: 75px;
+    text-align: center;
+
+    margin: auto;
+
+    transition: background-color 0.1s linear;
+}
+
+.st button:hover{
+    background-color: #5221E6;
+}
+
+/*-------------------------------Footer--------------------------------*/
 
 footer{
     width: 100%;
-    padding: 2% 0;
     color: #fff;
+
+    height: 422px;
     background-color: #181823;
+
+    position: relative;
 }
 
 footer article{
-    margin: 30px 5% 0;
+    height: 262px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%, -50%);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.footer_container{
     font-weight: 400;
     font-size: 16px;
 
@@ -149,6 +254,8 @@ footer article{
     width: 104px;
     display: flex;
     flex-flow: row;
+
+    margin-top: 15px;
 }
 
 .icones div img{
@@ -167,20 +274,12 @@ footer article{
     justify-content: space-around;
 }
 
-.nav_link1{
+.nav_link{
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 190px;
-}
-
-.nav_link2{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 140px;
 }
 
 .footer_navigation a{
@@ -189,35 +288,5 @@ footer article{
 }
 
 footer p{
-    margin-left: 5%;
-    opacity: 0.5;
-}
-
-.frame_30{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-.st1 section{
-    background-color: #181823;
-    width: 636px;
-    height: 830px;
-    color: white;
-}
-
-.st1 p{
-    font-weight: 700;
     color: #8491A0;
-    font-size: 16px;
-}
-
-.st1 h1{
-    font-weight: 700;
-    color: #fff;
-    font-size: 55px;
-}
-
-.st_text{
-    padding: 32px;
 }
