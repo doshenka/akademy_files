@@ -2,7 +2,7 @@
 <html lang="ru"> 
     <head> <!--"Голова", где прописываются инструкции к сайту для браузеров-->
         <title>Заголовок веб-страницы</title>
-        <link rel="stylesheet" href="имя.css"> <!--Так подключается css-файл.-->
+        <link rel="stylesheet" href="style2.css"> <!--Так подключается css-файл.-->
         <meta charset="UTF-8"> 
         <!--Следующие 3 ссылки - пример подключения шрифтов из Google Fonts.-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +12,17 @@
     <body> <!--Наша основная видимая часть для браузеров-->
         <header></header> <!--Шапка-->
         <main>
-            <h1 style="color: #7030A0">Хэй, это мой первый сайт!</h1> <!--Заголовок с атрибутом style для красоты-->
-            <!--А тут еще больше стилизованной красоты-->
-            <p><b>Я</b> уже готов стать крутым <span style="color: #FF6F26">верстальщиком</span>!</p> 
+            <!--Hero-->
+            <article class="frame_Hero">
+                <div class="Hero_foto">
+                    <img id="Hero" src="Assets/head.jpg" Icone="Hero">
+                    <img id="Square" src="Assets/Rectangle 38.png" alt="Square">
+                </div>
+                <div class="Hero_text">
+                    <h1>I’m Robin Williams.<br>A Product Designer<br><span style="opacity: 0.5;">based in Italy.</span></h1>
+                    <p>I’m probably the most passionate designer you will ever get to work with. If you have<br>a great project that needs some amazing skills, I’m your guy.</p>
+                </div>
+            </article>
         </main> <!--Основная часть-->
         <footer></footer><!--Подвал-->
     </body>
